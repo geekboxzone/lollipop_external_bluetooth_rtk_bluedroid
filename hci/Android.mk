@@ -65,7 +65,7 @@ LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../utils/include \
         $(bdroid_C_INCLUDES)
 
-LOCAL_MODULE := libbt_rtk-hci
+LOCAL_MODULE := libbt-hci-rtk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := STATIC_LIBRARIES
 
