@@ -67,7 +67,8 @@ bool vendor_open(const uint8_t *local_bdaddr) {
     check_wifi_chip_type_string(type);
     if (!strncmp(type, "RTL8723BS", 9)) {
         strcpy(vendor_so, "libbt-vendor-rtl8723bs.so");
-    } else if (!strcmp(type, "RTL8723BU")) {
+    } else if (!strcmp(type, "RTL8723BU") ||
+	       !strcmp(type, "RTL8723AU")) {
         strcpy(vendor_so, "libbt-vendor-rtl8723bu.so");
     } else {
         strcpy(vendor_so, VENDOR_LIBRARY_NAME);
